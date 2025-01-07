@@ -27,8 +27,7 @@ def get_state_probabilities(observation, transition_matrix, observation_matrix, 
     Returns:
         numpy array of shape (N, N) representing state probabilities    
     
-    '''
-    
+    '''    
     N = int(np.sqrt(transition_matrix.shape[0]))  # Extract grid size (N x N)
     num_states = N * N  # Total states
     
